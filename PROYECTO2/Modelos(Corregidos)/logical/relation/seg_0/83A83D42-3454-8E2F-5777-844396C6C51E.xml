@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RentaXPago" directorySegmentName="seg_0" id="83A83D42-3454-8E2F-5777-844396C6C51E">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 23:10:04 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>1B2717AE-9425-BBBD-18AC-DB45DC755D21</sourcePk>
+<targetPk>C2A9D261-C8D3-F7BA-A7A1-720243DEC8F6</targetPk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>está en</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>06C68F5C-FE0F-AFC4-3976-8A6BCBE52B58</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>1A64EEDB-E78D-A455-1E57-54BC3B90624A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3D4F100-3102-4CCA-323B-18AFF5D2AFF7" name="Carro">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>3318FE3A-4FD4-0BFC-A12F-B20DF7DEE05C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Placa" id="98A61B48-2721-F44C-5486-520651A86451">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del vehículo, es decir, corresponde a la llave primaria.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del vehículo, es decir, corresponde a la llave primaria.]]></commentInRDBMS>
+<generatorID>1E85C4DD-ED80-5B8C-B4A0-E276FF179966</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Marca" id="BE1CC440-AF47-7348-697D-B37AF8ABBC38">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Marca del carro.]]></comment>
+<commentInRDBMS><![CDATA[Marca del carro.]]></commentInRDBMS>
+<generatorID>37BB4319-C4FC-C71E-04DE-09F54DA5967F</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoCarro" id="87D1F1AE-73C7-535F-A054-46829B565003">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[El tipo de vehículo que es, es decir, si es un auto, campero o camioneta.]]></comment>
+<commentInRDBMS><![CDATA[El tipo de vehículo que es, es decir, si es un auto, campero o camioneta.]]></commentInRDBMS>
+<generatorID>87FF6D81-2F4F-47D1-7140-C2372A023DBD</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Estado" id="7BF69F0F-3262-7EDB-441E-E7A32C14EB09">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Estado del carro si está activo o no. 'A' en caso de que esté activo o 'N' en caso que no. ]]></comment>
+<commentInRDBMS><![CDATA[Estado del carro si está activo o no. 'A' en caso de que esté activo o 'N' en caso que no. ]]></commentInRDBMS>
+<generatorID>4CC37DEA-55AA-5C4E-D04B-F225F709655F</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ValorRenta" id="33DF5ED9-4198-EE8A-2982-62D692B43677">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Valor por el que se renta el carro.]]></comment>
+<commentInRDBMS><![CDATA[Valor por el que se renta el carro.]]></commentInRDBMS>
+<generatorID>4FB00755-FDE7-655F-2EB4-6F4055648330</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Duenio_CodigoPersona" id="663F4B12-04BC-BC4F-B3C6-2B71ABC09CE8">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al dueño del carro. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al dueño del carro. ]]></commentInRDBMS>
+<generatorID>47FC4A23-27C4-6E5D-2610-227FE56F1333</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6435C283-C14B-0F4D-0651-5768987DE306" referredColumn="A480FDB0-5B98-21F7-35C7-02DC080C5DEA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB29BFF1-6243-13E2-5CE5-C140E837BD3F" name="Carro_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>2EEF42FB-7E09-EAD3-5505-F31FDC4F20A4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98A61B48-2721-F44C-5486-520651A86451"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D91CE096-1C92-1E94-ED10-0A0BA9C591C8" name="Carro_Duenio_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>D62C79EF-CE93-82C8-3499-41BEF25A8107</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="663F4B12-04BC-BC4F-B3C6-2B71ABC09CE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

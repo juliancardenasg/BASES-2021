@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F699A5A6-60C4-E811-F270-4DE4D78261C7" name="Renta">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>06C68F5C-FE0F-AFC4-3976-8A6BCBE52B58</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoRenta" id="150DE770-8AF6-4771-F9D0-0DF59E850B0C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave primaria que corresponde a el número de la renta.]]></comment>
+<commentInRDBMS><![CDATA[Llave primaria que corresponde a el número de la renta.]]></commentInRDBMS>
+<generatorID>684F5DD7-8865-66DA-19BA-A38225D77726</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PagoRenta" id="C22901D9-F10A-D5BD-7ECD-921F3DDCA16B">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cantidad o saldo a pagar por la renta del vehículo.
+]]></comment>
+<commentInRDBMS><![CDATA[Cantidad o saldo a pagar por la renta del vehículo.
+]]></commentInRDBMS>
+<generatorID>CB29FF46-BA2B-E438-930F-D1FB7A8D0AB4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaRenta" id="04E2F41B-0642-D73C-D57B-9E81AAC7C259">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Fecha del día en que se rentó el carro.
+]]></comment>
+<commentInRDBMS><![CDATA[Fecha del día en que se rentó el carro.
+]]></commentInRDBMS>
+<generatorID>E9DD6554-1C3E-194D-8B5A-17E717547403</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FechaEntrega" id="9A358237-E36A-9DD0-ABC4-E1239F794E92">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Fecha de entrega del carro.]]></comment>
+<generatorID>F50F485B-8D9B-2F6E-EBFC-CC8AA3EF6E39</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Hora" id="8248AB34-2710-78C4-A332-ABD10C616887">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Hora en la que se rentó el carro.]]></comment>
+<commentInRDBMS><![CDATA[Hora en la que se rentó el carro.]]></commentInRDBMS>
+<generatorID>517941A2-ECA7-9C01-8343-289A6F943752</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_CodigoPersona" id="ABFECF69-15E6-C6BF-3D2E-ACE64F4D1626">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al cliente. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al cliente. ]]></commentInRDBMS>
+<generatorID>12A261D0-4349-6195-DD04-E5C7569F3638</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16382927-ED7A-3492-AA87-FFCF2898319A" referredColumn="202C8E26-AB85-6825-F64E-226B9705712A"/>
+</associations>
+</Column>
+<Column name="Carro_Placa" id="8B49164E-CD7A-DB2A-EC17-436F37020372">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al carro rentado. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al carro rentado. ]]></commentInRDBMS>
+<generatorID>1748E104-1C90-C41C-B356-95F1E8B34EF5</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB1F60BD-7675-B896-11A7-AE6227C5E481" referredColumn="98A61B48-2721-F44C-5486-520651A86451"/>
+</associations>
+</Column>
+<Column name="Pago_CodigoPago" id="3AA5A76A-7D20-93FF-1247-AA3C9CC568EE">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al pago de la renta.]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al pago de la renta.]]></commentInRDBMS>
+<generatorID>8D07628B-0CD2-6CDB-92B2-B4A7031687E6</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2071A118-2962-ACF5-3D4F-15D0B684684C" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="845DCA11-795C-CECA-C81B-E6D133B806CD" name="Renta_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1B2717AE-9425-BBBD-18AC-DB45DC755D21</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="150DE770-8AF6-4771-F9D0-0DF59E850B0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7D344F7-DAC4-9F4D-8A54-77815D70FD86" name="Renta__IDX">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>83A83D42-3454-8E2F-5777-844396C6C51E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3AA5A76A-7D20-93FF-1247-AA3C9CC568EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8274A32-1B04-6E66-1001-7EB5498C9775" name="Renta_Carro_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>0B9663AD-AAC9-268F-1139-214FAA732D88</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B49164E-CD7A-DB2A-EC17-436F37020372"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C62A278-3A0F-5F7C-BC19-A89EE30DC8E2" name="Renta_Cliente_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1962E268-AECC-17BD-F3BF-8139B56C9AE2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABFECF69-15E6-C6BF-3D2E-ACE64F4D1626"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="944F7255-4592-30AB-577B-791C793CF8B2" name="Renta_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>83A83D42-3454-8E2F-5777-844396C6C51E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AA5A76A-7D20-93FF-1247-AA3C9CC568EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

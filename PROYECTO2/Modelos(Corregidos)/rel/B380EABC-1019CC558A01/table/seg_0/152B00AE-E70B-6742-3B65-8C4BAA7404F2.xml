@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="152B00AE-E70B-6742-3B65-8C4BAA7404F2" name="Cliente">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>B858F43C-805D-AF54-5165-F6F13CD83E2C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPersona" id="202C8E26-AB85-6825-F64E-226B9705712A">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<commentInRDBMS><![CDATA[Código que identifica a la persona en el sistema.]]></commentInRDBMS>
+<generatorID>51035CFA-7F2D-B050-D4A0-2EB05499C41A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A78F283-942F-888D-5555-68A663A83CDD" referredColumn="075FB414-B2C0-ED6D-8338-EBBD9173175C"/>
+</associations>
+</Column>
+<Column name="Presupuesto" id="FE8AA82D-D2D3-118A-7E0B-7A05FF25978F">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Valor máximo que el cliente tiene pensado invertir en la renta.]]></comment>
+<commentInRDBMS><![CDATA[Valor máximo que el cliente tiene pensado invertir en la renta.]]></commentInRDBMS>
+<generatorID>EDC0388A-0147-4DA9-C344-C3B55C5E1230</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Usuario" id="E05738E7-CEEE-F213-AD69-35BD6D83D508">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres pública que identifica al cliente.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres pública que identifica al cliente.]]></commentInRDBMS>
+<generatorID>F380F89A-2EF2-1583-A448-DE166AB15E10</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contrasenia" id="72A1B6E3-F356-722C-5AF9-955D80C84C0D">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres privada.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres privada.]]></commentInRDBMS>
+<generatorID>C147286F-9011-579B-DA15-D83C9334E23F</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B98147E-5C10-3FE2-E05D-1B6C5010DC70" name="Cliente_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>574341C5-0A6E-F525-DDA6-EE5A4964F942</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="202C8E26-AB85-6825-F64E-226B9705712A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94839289-B624-9952-14B1-CC3848889CE5" name="Cliente_Persona_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>F778AB9D-4C3A-B54F-0EEE-ABD3735B0127</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="202C8E26-AB85-6825-F64E-226B9705712A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

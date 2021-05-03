@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12A7D8F8-4CAF-BFAA-A963-2799B0AD9C56" name="Pago">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1A64EEDB-E78D-A455-1E57-54BC3B90624A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPago" id="D33DE5CC-CE56-DD6A-A412-58BA434187EE">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></commentInRDBMS>
+<generatorID>C088B3DB-3C1C-8EB2-54BA-241F373B4EA7</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="7142527C-E1E6-92F7-C00E-B15799FF38A3">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Carácter que representa el tipo de pago que se realizó. ‘E’ si el pago fue en efectivo, ‘C’ si fue con tarjeta de crédito y ‘B’ si fue con bono. ]]></comment>
+<commentInRDBMS><![CDATA[Carácter que representa el tipo de pago que se realizó. ‘E’ si el pago fue en efectivo, ‘C’ si fue con tarjeta de crédito y ‘B’ si fue con bono. ]]></commentInRDBMS>
+<generatorID>49655B69-7230-AC46-A95C-195A042C1694</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Renta_CodigoRenta" id="08A72003-E7CD-7349-139B-2E1215D91EC8">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al número de renta que se está pagando. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al número de renta que se está pagando. ]]></commentInRDBMS>
+<generatorID>E74B0F54-4191-A45F-8F80-D08AADDE5C4C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A972039B-57FF-425D-DD88-CF266F102459" referredColumn="150DE770-8AF6-4771-F9D0-0DF59E850B0C"/>
+</associations>
+</Column>
+<Column name="Conductor_CodigoPersona" id="578E7F83-21FC-A46B-8B99-B06DDEB85539">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<generatorID>200E6B7C-7D02-F609-03CD-6DFEB0479262</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A6E3C20D-C13C-7037-4017-7A86383EE48E" referredColumn="A1115ECF-A224-AC40-C177-646A5898AA1C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64CA6D45-754D-09DF-0695-9FB7D227CAA4" name="Pago_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>C2A9D261-C8D3-F7BA-A7A1-720243DEC8F6</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="021C03A4-96EE-0A57-3551-0259B1DF64A5" name="Pago__IDX">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>83A83D42-3454-8E2F-5777-844396C6C51E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="08A72003-E7CD-7349-139B-2E1215D91EC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22430C3C-10C0-6406-B668-C39B3F2F449A" name="Pago_Conductor_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>A8020011-57E0-4059-9EBF-8AC7322E9981</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="578E7F83-21FC-A46B-8B99-B06DDEB85539"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7585B7EC-E413-416B-00CE-F0A61C71BB67" name="Pago_Renta_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>83A83D42-3454-8E2F-5777-844396C6C51E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08A72003-E7CD-7349-139B-2E1215D91EC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

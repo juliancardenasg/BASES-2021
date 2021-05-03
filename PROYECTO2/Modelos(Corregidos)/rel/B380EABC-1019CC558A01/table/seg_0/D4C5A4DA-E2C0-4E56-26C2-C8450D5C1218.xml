@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4C5A4DA-E2C0-4E56-26C2-C8450D5C1218" name="Conductor">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:51:09 UTC</createdTime>
+<generatorID>96D64E59-FABD-262A-832C-88C78FDC569A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPersona" id="A1115ECF-A224-AC40-C177-646A5898AA1C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:51:09 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<commentInRDBMS><![CDATA[Código que identifica a la persona en el sistema.]]></commentInRDBMS>
+<generatorID>51035CFA-7F2D-B050-D4A0-2EB05499C41A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A21905CA-D751-1470-9A1B-4B9139CA9765" referredColumn="075FB414-B2C0-ED6D-8338-EBBD9173175C"/>
+</associations>
+</Column>
+<Column name="Licencia" id="0AC48C5D-4246-CBDB-80A9-C9F856E86DC1">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:51:09 UTC</createdTime>
+<comment><![CDATA[Número de licencia del conductor.]]></comment>
+<commentInRDBMS><![CDATA[Número de licencia del conductor.]]></commentInRDBMS>
+<generatorID>7820DF51-673B-49CE-C82D-A024DE585E83</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5C32F3C0-A28F-2DA2-7DF0-F878882FBC8A" name="Conductor_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:51:09 UTC</createdTime>
+<generatorID>574341C5-0A6E-F525-DDA6-EE5A4964F942</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1115ECF-A224-AC40-C177-646A5898AA1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18FBC677-E943-C607-19A2-E315C33A5D02" name="Conductor_Persona_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1D097CD3-705E-E465-CD13-B9CD16475044</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1115ECF-A224-AC40-C177-646A5898AA1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

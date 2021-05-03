@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2687ACD-1F6C-CEE6-6B8A-6A5B320C9C1C" name="TarjetaCredito">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>C70B6DCC-261C-C7B4-C9A4-5F5746BECFB4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Numero" id="57C41DC2-55A5-43BA-E981-E9834CBCFF2E">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Número de la tarjeta de crédito.]]></comment>
+<commentInRDBMS><![CDATA[Número de la tarjeta de crédito.]]></commentInRDBMS>
+<generatorID>032B75F2-1936-F37F-D9B6-15CD8FE06838</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="F893F422-E5D9-7EED-489A-5AEA8465B671">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Si la tarjeta de crédito es VISA o MasterCard.]]></comment>
+<commentInRDBMS><![CDATA[Si la tarjeta de crédito es VISA o MasterCard.]]></commentInRDBMS>
+<generatorID>2233A04C-688E-7C7F-3A18-EF2ECC98FF2F</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MesExpiracion" id="819907A1-4BBF-AE3D-1D1A-84DED524EE02">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Mes en el que expira la tarjeta de crédito.]]></comment>
+<commentInRDBMS><![CDATA[Mes en el que expira la tarjeta de crédito.]]></commentInRDBMS>
+<generatorID>FD989BD1-0556-86BE-7C50-15608A2DC05E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AnioExpiracion" id="F11E02DC-9170-37A4-C585-2012B14924DF">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Año en donde la tarjeta de crédito expira.]]></comment>
+<commentInRDBMS><![CDATA[Año en donde la tarjeta de crédito expira.]]></commentInRDBMS>
+<generatorID>E4804BA2-8602-9836-8D0C-2FEDD93405DE</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_CodigoPersona" id="626B99A3-5092-7A37-24F8-7E6523E986F8">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<generatorID>CDE556F3-4C49-2254-03C8-37AA9D7C76C4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FB7784C-049E-84E3-A509-4C90B13B70B0" referredColumn="202C8E26-AB85-6825-F64E-226B9705712A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE4EAD5F-C49C-B24C-CB82-DCA0AA25273D" name="TarjetaCredito_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>D3CA0D0B-7B3C-ABEE-FCF3-556416977B42</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57C41DC2-55A5-43BA-E981-E9834CBCFF2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4BAD0DB-357B-F7AB-ABD0-B5D3B7225FFD" name="TarjetaCredito_Cliente_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>5B1766E3-6A9D-06D1-4A4B-DCEEDF3B6F71</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="626B99A3-5092-7A37-24F8-7E6523E986F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

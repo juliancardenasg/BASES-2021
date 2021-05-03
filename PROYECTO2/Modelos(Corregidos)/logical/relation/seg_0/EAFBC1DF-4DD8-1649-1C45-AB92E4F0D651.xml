@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FotoXPais" directorySegmentName="seg_0" id="EAFBC1DF-4DD8-1649-1C45-AB92E4F0D651">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:38:15 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>E6C7FFB5-FD08-751E-5C64-367F87D4773B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>paso en </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>500076D8-06A1-6E08-DBB7-A751A98FEA91</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4585A668-3165-A91B-4572-BDDFC23FC239</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

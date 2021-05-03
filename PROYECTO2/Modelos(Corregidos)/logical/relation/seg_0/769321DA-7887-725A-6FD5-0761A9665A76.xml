@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PagoXDescuento" directorySegmentName="seg_0" id="769321DA-7887-725A-6FD5-0761A9665A76">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 23:16:18 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>C2A9D261-C8D3-F7BA-A7A1-720243DEC8F6</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>aplica en</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1A64EEDB-E78D-A455-1E57-54BC3B90624A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8E05925F-66B2-F75D-BB81-057B3705BBB4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

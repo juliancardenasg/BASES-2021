@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC4A1C2F-5776-53F5-05D4-3D60D29ED50A" name="Ubicacion">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:38:50 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Barrio" id="CD8D8573-C87A-95DA-ED45-8203D0E513B3">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:38:55 UTC</createdTime>
+<comment><![CDATA[Barrio de la ubicación.
+]]></comment>
+<commentInRDBMS><![CDATA[Barrio de la ubicación.
+]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDMun" id="18607BA5-7CD0-45AA-74CC-662674FF1469">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:40:05 UTC</createdTime>
+<comment><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria. A su vez, es llave foranea del municipio.
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria. A su vez, es llave foranea del municipio.
+]]></commentInRDBMS>
+<generatorID>AEF91758-22DF-AB55-37F9-BBA1FCDFE55C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>B01726E2-A7C9-4544-FEFD-885DB1EE6760</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDDpto" id="5E210BF1-AD3C-F181-A036-80DF8917013C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:40:34 UTC</createdTime>
+<comment><![CDATA[Identificador único del departamento, es decir, corresponde a la llave primaria.A su vez, es llave foranea del departamento.
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del departamento, es decir, corresponde a la llave primaria.A su
+vez, es llave foranea del departamento.]]></commentInRDBMS>
+<generatorID>428090CD-583E-02F4-75BA-EAC6027F9126</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>0C75D965-9BF3-6949-15DE-E7CD98170E47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDPais" id="45AF3C6A-2120-5469-6E44-A4E79C2A9B33">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:40:55 UTC</createdTime>
+<comment><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.A su vez, es
+llave foranea de país.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.A su vez, es
+llave foranea de país.]]></commentInRDBMS>
+<generatorID>F2C061AD-00EE-4F77-1DFC-9B0966DA15BC</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>59957595-AF09-94F7-93FD-AFDAB56AD1C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodigoPersona" id="08DE8EA3-AAE9-7CF8-80D1-45345E013287">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:44:50 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<generatorID>EA50BF16-FAA9-50D9-791F-1E056E3D611A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>51035CFA-7F2D-B050-D4A0-2EB05499C41A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16EFAEBF-2EE5-E03A-1375-6F2730403030" name="Ubicacion PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:43:09 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18607BA5-7CD0-45AA-74CC-662674FF1469</attributeRef>
+<attributeRef>5E210BF1-AD3C-F181-A036-80DF8917013C</attributeRef>
+<attributeRef>45AF3C6A-2120-5469-6E44-A4E79C2A9B33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

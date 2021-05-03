@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07F412CE-374F-2B41-7377-421E89AAB10B" name="Impuesto">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>6CA9F1C7-075A-4483-E41C-0163E5E78339</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoImpuesto" id="7F3F9ABF-72F5-3CEF-23B0-015E8C1333FA">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del impuesto, es decir, corresponde a la llave primaria.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del impuesto, es decir, corresponde a la llave primaria.]]></commentInRDBMS>
+<generatorID>DABECD08-DF25-0581-C105-F5270908B598</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="8455646B-64DD-736D-36CA-331EFF6F0151">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres que representa la clase de impuesto impartido.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres que representa la clase de impuesto impartido.]]></commentInRDBMS>
+<generatorID>4F052890-5204-6923-04EC-D413B00DDCD5</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Porcentaje" id="9BB4A21D-D299-0DEE-D3CD-6F32762A6817">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Número que representa la proporcionalidad del impuesto y su aplicación al precio.
+]]></comment>
+<commentInRDBMS><![CDATA[Número que representa la proporcionalidad del impuesto y su aplicación al precio.
+]]></commentInRDBMS>
+<generatorID>4001040C-0322-D572-6861-4DF5CF482DAB</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pago_CodigoPago" id="48E22520-8DFB-B2FF-7404-4A0022E6B312">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que indica el pago al que se le va a aplicar el impuesto. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que indica el pago al que se le va a aplicar el impuesto. ]]></commentInRDBMS>
+<generatorID>22665628-E217-C35B-CF14-2340432BFE22</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27DB728A-1839-6A60-4988-02BE6255B582" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE025FCD-EE15-2B61-9C97-0D28B6025F00" name="Impuesto_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>AC9ABF20-899B-13A5-A9DA-53D0C064ADA2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F3F9ABF-72F5-3CEF-23B0-015E8C1333FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D29B115D-7ACE-B43D-F562-4D1E209CFDF9" name="Impuesto_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>451C5919-6D7D-91FE-BA9C-28989D6D4764</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48E22520-8DFB-B2FF-7404-4A0022E6B312"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

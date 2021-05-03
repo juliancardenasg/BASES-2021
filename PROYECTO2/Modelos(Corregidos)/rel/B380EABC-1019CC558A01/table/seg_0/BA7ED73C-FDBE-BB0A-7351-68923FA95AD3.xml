@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA7ED73C-FDBE-BB0A-7351-68923FA95AD3" name="Credito">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>F433D59E-61AD-E986-291E-CCD2C00D7E02</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPago" id="D0777AC2-2E68-DECC-6439-AFCD19295F5A">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></commentInRDBMS>
+<generatorID>C088B3DB-3C1C-8EB2-54BA-241F373B4EA7</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F92E215F-12FB-84A5-0667-008BD152F6C4" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+<Column name="Autorizacion" id="AC3B9109-990E-1D43-6684-7AA399079EA6">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Número de autorización de la tarjeta de crédito.]]></comment>
+<commentInRDBMS><![CDATA[Número de autorización de la tarjeta de crédito.]]></commentInRDBMS>
+<generatorID>1BEC1DD0-B44B-3B02-34E2-32AAB1EDA8E2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Entidad" id="29A7BC9B-D7D1-3A75-055C-1521DAD51E2C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>6B4D691E-3ACE-282F-C211-6BF22D2B41C9</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="43982B5C-0EE2-9C4C-F96E-8D2ACE551800" name="Credito_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>C2A9D261-C8D3-F7BA-A7A1-720243DEC8F6</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0777AC2-2E68-DECC-6439-AFCD19295F5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="433B8832-AC0B-FDE3-8921-97497A2D27D2" name="Credito_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>DA6A28DA-5CB2-C323-8B21-FC09AB63477D</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0777AC2-2E68-DECC-6439-AFCD19295F5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

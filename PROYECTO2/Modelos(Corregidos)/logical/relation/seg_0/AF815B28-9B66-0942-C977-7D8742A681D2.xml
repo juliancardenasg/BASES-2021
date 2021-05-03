@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CarroXFoto" directorySegmentName="seg_0" id="AF815B28-9B66-0942-C977-7D8742A681D2">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:54:14 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>2EEF42FB-7E09-EAD3-5505-F31FDC4F20A4</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>es de</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3318FE3A-4FD4-0BFC-A12F-B20DF7DEE05C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4585A668-3165-A91B-4572-BDDFC23FC239</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

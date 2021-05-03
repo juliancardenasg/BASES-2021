@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UbicacionXMunicipio" directorySegmentName="seg_0" id="AEF91758-22DF-AB55-37F9-BBA1FCDFE55C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:39:46 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>16EFAEBF-2EE5-E03A-1375-6F2730403030</sourcePk>
+<targetPk>931CF27F-AC6D-1359-37CB-52AC22DC71EC</targetPk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>está en</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FC4A1C2F-5776-53F5-05D4-3D60D29ED50A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>81C43018-D50B-153F-6DC4-DD9F4A95BF00</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

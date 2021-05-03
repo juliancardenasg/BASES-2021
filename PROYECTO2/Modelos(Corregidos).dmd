@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelos(Corregidos)" id="2FD20234-B66E-58E7-1A55-4661C5F85DF5" version="3.5">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:24:54 UTC</createdTime>
+<ownerDesignName>Proyecto_Final_BD_P1</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>2FD20234-B66E-58E7-1A55-4661C5F85DF5</designId>
+</OSDM_Design>

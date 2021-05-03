@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56B9B119-CCCE-6C02-9E46-778880025B11" name="Descuento">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>8E05925F-66B2-F75D-BB81-057B3705BBB4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoDescuento" id="50CEC2A0-2FBE-A272-7F2A-6589F9647FDA">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del descuento, es decir, corresponde a la llave primaria. ]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del descuento, es decir, corresponde a la llave primaria. ]]></commentInRDBMS>
+<generatorID>96152E19-D210-8E37-4D03-C6C7F1E2119C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="E0B29076-7F14-B37E-6C26-6CAE9B5BA67E">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres que representa la clase de descuento impartido.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres que representa la clase de descuento impartido.]]></commentInRDBMS>
+<generatorID>F8C7C6ED-7A17-5D62-4DCA-4033DC110E0A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Porcentaje" id="9C4A310E-48ED-10F4-360D-A90350FCE8A3">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Número que representa la proporcionalidad del descuento y su aplicación al precio.]]></comment>
+<commentInRDBMS><![CDATA[Número que representa la proporcionalidad del descuento y su aplicación al precio.]]></commentInRDBMS>
+<generatorID>65A3392C-3683-A635-9998-3CEC254E9DA4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pago_CodigoPago" id="E4168255-8E5B-5744-25D2-7CCD2B42B252">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que indica a cual pago se le va aplicar el descuento.]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que indica a cual pago se le va aplicar el descuento.]]></commentInRDBMS>
+<generatorID>A59B9360-5E82-47DA-08E0-7A3829FEBFA6</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BB2E6C6-337B-834A-3674-79C21B354C13" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1352FEB7-3DBF-1A46-5220-DAE26BC532F9" name="Descuento_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1CBF266D-4AE1-FAAB-CFED-E9D208DFD86D</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50CEC2A0-2FBE-A272-7F2A-6589F9647FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66125445-11FC-2A54-8D41-8051AAD52FC1" name="Descuento_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>769321DA-7887-725A-6FD5-0761A9665A76</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4168255-8E5B-5744-25D2-7CCD2B42B252"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

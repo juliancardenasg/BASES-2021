@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FEB959C-4011-7F75-BC55-CF4FA725AE91" name="ComisionXPago">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Pago_CodigoPago" id="09AD61E7-D418-97AA-F5EB-2EB98389444A">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30BC9681-8B64-B966-361C-4667F2BE77EE" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+<Column name="Comision_CodigoComision" id="B2FE67F9-CD1D-50AA-63A4-C98ACD8013F7">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B02E2E42-4AD2-A8C8-3548-257860323719" referredColumn="FDD4E498-2B0F-898C-B009-FC573D8B22CF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C0CC17D-11AA-C30C-3A9E-45AB75FD1E99" name="ComisionXPago_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09AD61E7-D418-97AA-F5EB-2EB98389444A"/>
+<colUsage columnID="B2FE67F9-CD1D-50AA-63A4-C98ACD8013F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="139EAE6A-39D4-FD22-7C86-C8CE84FA35F2" name="ComisionXPago_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>40EC6D10-7886-7185-EAAC-CCCAAFEB265E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09AD61E7-D418-97AA-F5EB-2EB98389444A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F93F08EA-5692-334C-71D6-56947838AC92" name="ComisionXPago_Comision_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>40EC6D10-7886-7185-EAAC-CCCAAFEB265E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2FE67F9-CD1D-50AA-63A4-C98ACD8013F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

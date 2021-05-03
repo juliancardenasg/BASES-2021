@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AAF9138D-4EC1-B8E9-CF13-1026BFF7F9BE" name="Pais">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>500076D8-06A1-6E08-DBB7-A751A98FEA91</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDPais" id="6B628CA5-52D6-355D-31F7-745118D0C518">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.
+]]></commentInRDBMS>
+<generatorID>59957595-AF09-94F7-93FD-AFDAB56AD1C1</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="BF438E53-68F5-69B4-B034-870BAB69B2C3">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Nombre del país.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del país.]]></commentInRDBMS>
+<generatorID>E2E03590-7807-ABFE-1477-74F3FC0A63B2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ubicacion_Municipio_IDMun" id="7A4DF295-FDF6-0D18-0E4F-B0603097DD40">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria. A su vez, es llave foranea del municipio.
+]]></comment>
+<generatorID>61CD1D78-6ADB-F764-8CF3-2805BA19A2BF</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F13B5C4-02F2-EB05-564C-E5C0E035192B" referredColumn="369C698D-347C-BF6D-2EAF-A738FD7F57AF"/>
+</associations>
+</Column>
+<Column name="Ubicacion_Departamento_IDDpto" id="B03A2A1F-6599-96F3-F038-20379A02E3A4">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del departamento, es decir, corresponde a la llave primaria.A su vez, es llave foranea del departamento.
+]]></comment>
+<generatorID>94D399FC-1917-3035-F5DE-8F5FA1DC0488</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F13B5C4-02F2-EB05-564C-E5C0E035192B" referredColumn="A16E4C6D-7CE6-AD97-1C7E-7CAA31F2AC32"/>
+</associations>
+</Column>
+<Column name="Ubicacion_IDPais" id="FE3A24FE-C0AF-C48C-0E94-A616B50C6F4D">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.A su vez, es
+llave foranea de país.]]></comment>
+<generatorID>DFB2EECC-293E-E6CE-6F93-8F0F948C6718</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F13B5C4-02F2-EB05-564C-E5C0E035192B" referredColumn="CA5E1CE0-EBCE-C79F-1555-D7073C6B3486"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D11F1CA-1B72-8435-5061-DB2F10DC1CB9" name="Pais_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>E6C7FFB5-FD08-751E-5C64-367F87D4773B</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B628CA5-52D6-355D-31F7-745118D0C518"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9744BC3A-1537-EED0-A3AA-E4435CC02F80" name="Pais__IDX">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F2C061AD-00EE-4F77-1DFC-9B0966DA15BC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="7A4DF295-FDF6-0D18-0E4F-B0603097DD40"/>
+<colUsage columnID="B03A2A1F-6599-96F3-F038-20379A02E3A4"/>
+<colUsage columnID="FE3A24FE-C0AF-C48C-0E94-A616B50C6F4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E9EF3A0D-0AB4-240A-1FC9-86A8FFA96997" name="Pais_Ubicacion_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>F2C061AD-00EE-4F77-1DFC-9B0966DA15BC</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A4DF295-FDF6-0D18-0E4F-B0603097DD40"/>
+<colUsage columnID="B03A2A1F-6599-96F3-F038-20379A02E3A4"/>
+<colUsage columnID="FE3A24FE-C0AF-C48C-0E94-A616B50C6F4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DuenioXCarro" directorySegmentName="seg_0" id="D62C79EF-CE93-82C8-3499-41BEF25A8107">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:52:40 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>574341C5-0A6E-F525-DDA6-EE5A4964F942</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>es de</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1032A5F5-DBFE-A917-321C-CF7246A5102B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3318FE3A-4FD4-0BFC-A12F-B20DF7DEE05C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

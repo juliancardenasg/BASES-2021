@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3318FE3A-4FD4-0BFC-A12F-B20DF7DEE05C" name="Carro">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:49:04 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Placa" id="1E85C4DD-ED80-5B8C-B4A0-E276FF179966">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:49:14 UTC</createdTime>
+<comment><![CDATA[Identificador único del vehículo, es decir, corresponde a la llave primaria.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del vehículo, es decir, corresponde a la llave primaria.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Marca" id="37BB4319-C4FC-C71E-04DE-09F54DA5967F">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:49:40 UTC</createdTime>
+<comment><![CDATA[Marca del carro.]]></comment>
+<commentInRDBMS><![CDATA[Marca del carro.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TipoCarro" id="87FF6D81-2F4F-47D1-7140-C2372A023DBD">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:50:00 UTC</createdTime>
+<comment><![CDATA[El tipo de vehículo que es, es decir, si es un auto, campero o camioneta.]]></comment>
+<commentInRDBMS><![CDATA[El tipo de vehículo que es, es decir, si es un auto, campero o camioneta.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="4CC37DEA-55AA-5C4E-D04B-F225F709655F">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:50:26 UTC</createdTime>
+<comment><![CDATA[Estado del carro si está activo o no. 'A' en caso de que esté activo o 'N' en caso que no. ]]></comment>
+<commentInRDBMS><![CDATA[Estado del carro si está activo o no. 'A' en caso de que esté activo o 'N' en caso que no. ]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ValorRenta" id="4FB00755-FDE7-655F-2EB4-6F4055648330">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:51:32 UTC</createdTime>
+<comment><![CDATA[Valor por el que se renta el carro.]]></comment>
+<commentInRDBMS><![CDATA[Valor por el que se renta el carro.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CodigoPersona" id="47FC4A23-27C4-6E5D-2610-227FE56F1333">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:52:40 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al dueño del carro. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al dueño del carro. ]]></commentInRDBMS>
+<generatorID>D62C79EF-CE93-82C8-3499-41BEF25A8107</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>51035CFA-7F2D-B050-D4A0-2EB05499C41A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2EEF42FB-7E09-EAD3-5505-F31FDC4F20A4" name="Carro PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:49:24 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E85C4DD-ED80-5B8C-B4A0-E276FF179966</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

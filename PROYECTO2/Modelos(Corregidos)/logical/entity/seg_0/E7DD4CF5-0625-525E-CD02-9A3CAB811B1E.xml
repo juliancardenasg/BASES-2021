@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7DD4CF5-0625-525E-CD02-9A3CAB811B1E" name="Comision">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 01:21:54 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CodigoComision" id="E6BB8DAD-1A30-580A-786D-590F7A9457FB">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 01:24:14 UTC</createdTime>
+<comment><![CDATA[Llave primaria que identifica la comision]]></comment>
+<commentInRDBMS><![CDATA[Llave primaria que identifica la comision]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Porcentaje" id="4DA179BE-FB8E-E783-287C-00B669B4FE84">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 01:22:01 UTC</createdTime>
+<comment><![CDATA[Porcentaje de la comisión]]></comment>
+<commentInRDBMS><![CDATA[Porcentaje de la comisión]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>3</dataTypeScale>
+<ownDataTypeParameters>,3,3</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tipo" id="0DC5638C-1052-9073-11B8-1105E01FCF17">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 01:24:29 UTC</createdTime>
+<comment><![CDATA[Tipo de comisión]]></comment>
+<commentInRDBMS><![CDATA[Tipo de comisión]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BF4C0DBD-9A18-E5F7-A90D-2DD1B6BCFEF0" name="Comision PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 01:24:26 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E6BB8DAD-1A30-580A-786D-590F7A9457FB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4585A668-3165-A91B-4572-BDDFC23FC239" name="Foto">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:36:36 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IDFoto" id="B4A24331-8DC4-B6D5-71AB-A0224118D46C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:36:41 UTC</createdTime>
+<comment><![CDATA[Identificador único de la foto, es decir, corresponde a la llave primaria. ]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de la foto, es decir, corresponde a la llave primaria. ]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Descripcion" id="2E38EA63-5887-6F2D-E326-E8D22246F879">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:37:08 UTC</createdTime>
+<comment><![CDATA[Campo donde se podrán especificar características del vehículo.]]></comment>
+<commentInRDBMS><![CDATA[Campo donde se podrán especificar características del vehículo.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="CAC91616-536B-1198-DDD0-B06AC9390F5A">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:37:35 UTC</createdTime>
+<comment><![CDATA[Tipo de dato fecha que corresponde a la fecha donde la foto fue tomada.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de dato fecha que corresponde a la fecha donde la foto fue tomada.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDPais" id="D49D8E00-E6EA-A485-2A41-399A831D18F0">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:38:15 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al país donde se tomó la foto. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al país donde se tomó la foto. ]]></commentInRDBMS>
+<generatorID>EAFBC1DF-4DD8-1649-1C45-AB92E4F0D651</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>59957595-AF09-94F7-93FD-AFDAB56AD1C1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Placa" id="D32C3084-1EB1-E459-4D32-FA7079B53852">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:54:14 UTC</createdTime>
+<comment><![CDATA[Llave foranea que identifica el vehículo. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que identifica el vehículo. ]]></commentInRDBMS>
+<generatorID>AF815B28-9B66-0942-C977-7D8742A681D2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<referedAttribute>1E85C4DD-ED80-5B8C-B4A0-E276FF179966</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F26D323E-3EE4-4327-2AD4-F6A888FCDDF7" name="Foto PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:36:51 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4A24331-8DC4-B6D5-71AB-A0224118D46C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

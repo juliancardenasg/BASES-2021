@@ -1,0 +1,191 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E795D8A9-BBEB-918C-A2C9-9BE9891638BB" name="Persona">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>BBFA6BEB-CB88-718A-1BB0-02895A29C16E</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPersona" id="075FB414-B2C0-ED6D-8338-EBBD9173175C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Código que identifica a la persona en el sistema.]]></comment>
+<commentInRDBMS><![CDATA[Código que identifica a la persona en el sistema.]]></commentInRDBMS>
+<generatorID>51035CFA-7F2D-B050-D4A0-2EB05499C41A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="62B01B62-DE94-744A-1BFC-56C812C7D077">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Dirección de correo electrónica única.]]></comment>
+<commentInRDBMS><![CDATA[Dirección de correo electrónica única.]]></commentInRDBMS>
+<generatorID>284EB63D-15EB-9BB0-9EEE-4FDEE64285C2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="206BF666-988E-23AC-5C0E-2461F3503313">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Nombre de la persona.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de la persona.]]></commentInRDBMS>
+<generatorID>0D549E7D-C698-DAD8-81A6-BD4305553A98</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="A1326467-072F-F69E-88AE-9509F5B29A77">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Apellidos de la persona.]]></comment>
+<generatorID>75EEDD72-A108-2744-9A4D-73F61004C726</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Documento" id="E0C13AC9-ADAB-A86B-2DA4-884DB62B366D">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Número del documento de la persona.]]></comment>
+<commentInRDBMS><![CDATA[Número del documento de la persona.]]></commentInRDBMS>
+<generatorID>B3839D82-8D9C-B391-0078-97A30F772950</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TipoDocumento" id="0BCB1328-3516-6EBC-31B7-15CF863CF976">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres que identifica el tipo de documento. “CC” si el documento es cédula de ciudadanía o “TE” si el documento es una tarjeta de extranjería.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres que identifica el tipo de documento. “CC” si el documento es cédula de ciudadanía o “TE” si el documento es una tarjeta de extranjería. ]]></commentInRDBMS>
+<generatorID>9FE657BC-D28C-1386-8D8E-954112F3E33C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ubicacion_IDMun" id="17873CF1-10AF-3C8F-0678-B7DE14D506D0">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que indica el municipio donde se encuentra la persona. 
+]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que indica el municipio donde se encuentra la persona. ]]></commentInRDBMS>
+<generatorID>1196DB5B-8278-1238-695C-6DABA8D2C9FE</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B84A77-6C0C-851D-99D0-EB0E433DEDC2" referredColumn="369C698D-347C-BF6D-2EAF-A738FD7F57AF"/>
+</associations>
+</Column>
+<Column name="Ubicacion_IDDpto" id="F5DE0911-EA92-660B-8D68-B5384F95EC21">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que indica el departamento donde se encuentra la persona. 
+]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que indica el departamento donde se encuentra la persona. ]]></commentInRDBMS>
+<generatorID>FF66CE97-D50A-CA07-EBD9-D7997D7E0519</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B84A77-6C0C-851D-99D0-EB0E433DEDC2" referredColumn="A16E4C6D-7CE6-AD97-1C7E-7CAA31F2AC32"/>
+</associations>
+</Column>
+<Column name="Ubicacion_IDPais" id="EBB70208-CC84-FA5F-2327-378A70D37FA8">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que indica el país donde se encuentra la persona. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que indica el país donde se encuentra la persona. ]]></commentInRDBMS>
+<generatorID>F09792E4-8F3F-D46A-6B80-D5BBFBA1A797</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1B84A77-6C0C-851D-99D0-EB0E433DEDC2" referredColumn="CA5E1CE0-EBCE-C79F-1555-D7073C6B3486"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1169784F-C4FE-2D72-6503-DF558586769B" name="Persona_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>574341C5-0A6E-F525-DDA6-EE5A4964F942</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="075FB414-B2C0-ED6D-8338-EBBD9173175C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="780EEC15-CA65-8075-0232-532038814353" name="Persona__IDX">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EA50BF16-FAA9-50D9-791F-1E056E3D611A</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="17873CF1-10AF-3C8F-0678-B7DE14D506D0"/>
+<colUsage columnID="F5DE0911-EA92-660B-8D68-B5384F95EC21"/>
+<colUsage columnID="EBB70208-CC84-FA5F-2327-378A70D37FA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D480125D-C48F-2C05-A685-0A1F7C571716" name="Persona_Ubicacion_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>EA50BF16-FAA9-50D9-791F-1E056E3D611A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17873CF1-10AF-3C8F-0678-B7DE14D506D0"/>
+<colUsage columnID="F5DE0911-EA92-660B-8D68-B5384F95EC21"/>
+<colUsage columnID="EBB70208-CC84-FA5F-2327-378A70D37FA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

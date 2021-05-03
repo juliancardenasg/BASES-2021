@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F505AC90-EFFB-0EC7-862B-AA98503A2F7D" name="Municipio">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>81C43018-D50B-153F-6DC4-DD9F4A95BF00</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDMun" id="1713ABB6-341D-C82F-7A0F-E30B3000F0FB">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria.]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria.]]></commentInRDBMS>
+<generatorID>B01726E2-A7C9-4544-FEFD-885DB1EE6760</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="AA61BCDF-07F2-6CF8-18DC-6587D4FBE14B">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Nombre del municipio.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del municipio.]]></commentInRDBMS>
+<generatorID>B413A46D-0574-D039-6BED-77C92C88FC43</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ubicacion_IDMun" id="2CADBC69-39EA-8CD7-1D0A-4FFB5FA8B3EE">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del municipio, es decir, corresponde a la llave primaria. A su vez, es llave foranea del municipio.
+]]></comment>
+<generatorID>C36DECBA-DAAC-C2AF-4ACE-ADF2CA1C53B4</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8140270-B383-78C3-351D-2FA3FF527E9A" referredColumn="369C698D-347C-BF6D-2EAF-A738FD7F57AF"/>
+</associations>
+</Column>
+<Column name="Ubicacion_Departamento_IDDpto" id="6F4B520E-D18D-B049-02C8-38FAE52BFDD5">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del departamento, es decir, corresponde a la llave primaria.A su vez, es llave foranea del departamento.
+]]></comment>
+<generatorID>113D05DE-13B4-7CAA-FE43-9F51570EAF08</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8140270-B383-78C3-351D-2FA3FF527E9A" referredColumn="A16E4C6D-7CE6-AD97-1C7E-7CAA31F2AC32"/>
+</associations>
+</Column>
+<Column name="Ubicacion_IDPais" id="3E2BDEAB-6331-BB7A-1E13-B9F7CA77DA8C">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del país, es decir, corresponde a la llave primaria.A su vez, es
+llave foranea de país.]]></comment>
+<generatorID>4274715E-CF9B-FD4E-37A7-BAB68D685991</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8140270-B383-78C3-351D-2FA3FF527E9A" referredColumn="CA5E1CE0-EBCE-C79F-1555-D7073C6B3486"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BC2B7DCB-D025-A266-222A-6D9E8E0F95BD" name="Municipio_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>931CF27F-AC6D-1359-37CB-52AC22DC71EC</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1713ABB6-341D-C82F-7A0F-E30B3000F0FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8668F6AB-D933-BEE3-1558-64129F811C9C" name="Municipio__IDX">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AEF91758-22DF-AB55-37F9-BBA1FCDFE55C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="2CADBC69-39EA-8CD7-1D0A-4FFB5FA8B3EE"/>
+<colUsage columnID="6F4B520E-D18D-B049-02C8-38FAE52BFDD5"/>
+<colUsage columnID="3E2BDEAB-6331-BB7A-1E13-B9F7CA77DA8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDCEC36B-C418-39B0-ED28-951F555B660C" name="Municipio_Ubicacion_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>AEF91758-22DF-AB55-37F9-BBA1FCDFE55C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CADBC69-39EA-8CD7-1D0A-4FFB5FA8B3EE"/>
+<colUsage columnID="6F4B520E-D18D-B049-02C8-38FAE52BFDD5"/>
+<colUsage columnID="3E2BDEAB-6331-BB7A-1E13-B9F7CA77DA8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

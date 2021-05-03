@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="933C4016-1792-1B3E-E2F0-E28508ABA13E" name="Bono">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>021642D8-EE04-2FA8-6AC8-08106CBFB9EF</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CodigoPago" id="27A3CF63-B8F1-B921-6632-0762C5ACE82D">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del pago realizado, es decir, corresponde a la llave primaria.
+]]></commentInRDBMS>
+<generatorID>C088B3DB-3C1C-8EB2-54BA-241F373B4EA7</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BB2F98C-51EC-B530-CD54-553ADA25E1EB" referredColumn="D33DE5CC-CE56-DD6A-A412-58BA434187EE"/>
+</associations>
+</Column>
+<Column name="Valor" id="C2CA0845-DC82-648F-996A-4A374FD19AF3">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Cantidad de dinero correspondiente al bono.]]></comment>
+<commentInRDBMS><![CDATA[Cantidad de dinero correspondiente al bono.]]></commentInRDBMS>
+<generatorID>C8B1CA34-ABC7-7DDD-F834-D592C082AD88</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="781CB8F1-F8C5-498F-F592-D7B3F69CC1C4" name="Bono_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>C2A9D261-C8D3-F7BA-A7A1-720243DEC8F6</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A3CF63-B8F1-B921-6632-0762C5ACE82D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77FB6F0C-7CC4-545B-B6F0-CA2A5E074655" name="Bono_Pago_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>1FCDECDE-083B-81D4-C189-951BBB489981</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27A3CF63-B8F1-B921-6632-0762C5ACE82D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

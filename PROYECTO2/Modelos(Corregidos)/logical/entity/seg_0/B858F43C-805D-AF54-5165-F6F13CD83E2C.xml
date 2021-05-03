@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B858F43C-805D-AF54-5165-F6F13CD83E2C" name="Cliente">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:56:27 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>BBFA6BEB-CB88-718A-1BB0-02895A29C16E</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Presupuesto" id="EDC0388A-0147-4DA9-C344-C3B55C5E1230">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:56:32 UTC</createdTime>
+<comment><![CDATA[Valor máximo que el cliente tiene pensado invertir en la renta.]]></comment>
+<commentInRDBMS><![CDATA[Valor máximo que el cliente tiene pensado invertir en la renta.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Usuario" id="F380F89A-2EF2-1583-A448-DE166AB15E10">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:56:58 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres pública que identifica al cliente.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres pública que identifica al cliente.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Contrasenia" id="C147286F-9011-579B-DA15-D83C9334E23F">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 22:57:17 UTC</createdTime>
+<comment><![CDATA[Cadena de caracteres privada.]]></comment>
+<commentInRDBMS><![CDATA[Cadena de caracteres privada.]]></commentInRDBMS>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

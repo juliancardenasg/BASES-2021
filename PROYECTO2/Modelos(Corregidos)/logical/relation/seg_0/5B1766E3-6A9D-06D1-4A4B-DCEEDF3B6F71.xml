@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ClienteXTarjetaCredito" directorySegmentName="seg_0" id="5B1766E3-6A9D-06D1-4A4B-DCEEDF3B6F71">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-11 23:22:40 UTC</createdTime>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<engineerTo>
+<item key="B380EABC-19BC-4EAD-F7EC-1019CC558A01" value="true"/>
+</engineerTo>
+<sourcePk>574341C5-0A6E-F525-DDA6-EE5A4964F942</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es titular de</nameOnSource>
+<nameOnTarget>es de</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B858F43C-805D-AF54-5165-F6F13CD83E2C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C70B6DCC-261C-C7B4-C9A4-5F5746BECFB4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

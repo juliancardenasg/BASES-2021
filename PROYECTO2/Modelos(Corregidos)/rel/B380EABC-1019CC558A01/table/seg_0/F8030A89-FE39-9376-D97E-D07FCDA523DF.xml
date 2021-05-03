@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8030A89-FE39-9376-D97E-D07FCDA523DF" name="Foto">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>4585A668-3165-A91B-4572-BDDFC23FC239</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="IDFoto" id="F6A891AA-D293-E846-CA49-F5131C419B31">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Identificador único de la foto, es decir, corresponde a la llave primaria. ]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de la foto, es decir, corresponde a la llave primaria. ]]></commentInRDBMS>
+<generatorID>B4A24331-8DC4-B6D5-71AB-A0224118D46C</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Descripcion" id="43617AC6-E1E3-8B19-2BC6-EB763E48DE79">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Campo donde se podrán especificar características del vehículo.]]></comment>
+<commentInRDBMS><![CDATA[Campo donde se podrán especificar características del vehículo.]]></commentInRDBMS>
+<generatorID>2E38EA63-5887-6F2D-E326-E8D22246F879</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="4C57A784-E1B1-07D0-7FC9-0AC4E6E05DBD">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Tipo de dato fecha que corresponde a la fecha donde la foto fue tomada.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de dato fecha que corresponde a la fecha donde la foto fue tomada.]]></commentInRDBMS>
+<generatorID>CAC91616-536B-1198-DDD0-B06AC9390F5A</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais_IDPais" id="E27BF90A-566F-AB54-6E83-53A7BD3B8BE1">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que corresponde al país donde se tomó la foto. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que corresponde al país donde se tomó la foto. ]]></commentInRDBMS>
+<generatorID>D49D8E00-E6EA-A485-2A41-399A831D18F0</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10BE9AE7-8A2C-C1DE-80FA-05F859077642" referredColumn="6B628CA5-52D6-355D-31F7-745118D0C518"/>
+</associations>
+</Column>
+<Column name="Carro_Placa" id="4C8C3225-F02B-4255-6AAC-9CBFC50D2ECC">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<comment><![CDATA[Llave foranea que identifica el vehículo. ]]></comment>
+<commentInRDBMS><![CDATA[Llave foranea que identifica el vehículo. ]]></commentInRDBMS>
+<generatorID>D32C3084-1EB1-E459-4D32-FA7079B53852</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="40287EE8-8DF1-86D8-4243-A8732E4B2A8C" referredColumn="98A61B48-2721-F44C-5486-520651A86451"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F72997A2-E233-AECB-ECFD-275FCEFB605A" name="Foto_PK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>F26D323E-3EE4-4327-2AD4-F6A888FCDDF7</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6A891AA-D293-E846-CA49-F5131C419B31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21D009C8-9F38-F5BC-0AA2-974F2409E1A8" name="Foto_Carro_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>AF815B28-9B66-0942-C977-7D8742A681D2</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C8C3225-F02B-4255-6AAC-9CBFC50D2ECC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DF28F6F-030C-AAEC-948F-6FCE2B07E4A1" name="Foto_Pais_FK">
+<createdBy>estef</createdBy>
+<createdTime>2021-04-26 14:59:11 UTC</createdTime>
+<generatorID>EAFBC1DF-4DD8-1649-1C45-AB92E4F0D651</generatorID>
+<ownerDesignName>Modelos(Corregidos)</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E27BF90A-566F-AB54-6E83-53A7BD3B8BE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
